@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Exercicios com DOM</title>
+</head>
+<body>
+    <h1>Exercicios com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprenda a susar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <br>
+
+    <script>
+        var div = window.document.getElementById('msg')
+        window.document.write('Está escrito assim: ' + div.innerText)
+    </script>
+</body>
+</html>

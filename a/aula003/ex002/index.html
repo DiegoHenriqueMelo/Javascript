@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+    Qual pais vc mora?<input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var pais = String(txtv.value)
+            res.innerHTML = `Você mora no país: ${pais}`
+            if (pais == 'Brasil'){
+                res.innerHTML = ('você é brasileiro')
+            } else{
+                res.innerHTML = ('Você é um burgues safado!')
+            }
+        }
+
+    </script>
+</body>
+</html>
