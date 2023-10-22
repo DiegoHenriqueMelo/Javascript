@@ -1,0 +1,4 @@
+// CRIE UMA VARIAVEL DO TIPO OBJETO, QUE REPRESENTE UM FIAT UNO. É NECESSARIO CONTER: ANO, MODELO E PELO MENOS TRES CORES
+let car = {nome: 'FIAT Uno', ano:2024, cores:['Vermelho', 'Branco', 'Preto'] }
+
+
