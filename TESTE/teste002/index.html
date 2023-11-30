@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        var eu = {
+            nome: "Diego",
+            idade: 18,
+            sexo: "Masculino",
+            cidade: "Franca"
+        }
+        var preferencias = {
+            marca: "Nike",
+            filhos: 2,
+            cachorro: 2,
+            gatos: 2,
+        }
+        eu.sobrenome = "Melo"
+
+        console.log(eu.nome)
+        console.log(preferencias.marca)
+
+        var resumo = Object.assign({}, eu, preferencias)
+
+        console.log(resumo)
+        
+            var one = 0
+            while(one < 7){
+                console.log(one)
+                ++one
+            }
+
+            var one = 0
+            while(one < 100){
+                if(one % 10 === 0){
+                    console.log(`${one} - PING`)
+                } else if(one % 5 === 0){
+                    console.log(`${one} - PONG `)
+                }
+                ++one
+            }
+
+
+    </script>
+</body>
+</html>

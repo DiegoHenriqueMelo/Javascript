@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var imovel = "casa"
+        var valor = 150.000
+        var carteira = 150.000
+        console.log(`A sua ${imovel} está no valor de R$${valor} mil.`)
+
+        if(carteira >= valor){
+        console.log('Dinheiro sufuciente')
+        }else{
+        console.log('Dinheiro insuficiente')
+        }
+
+        console.log('****teste****')
+
+        function personagem(){
+            console.log(this)
+        }
+        var personageThis ={
+            nome: 'Diego',
+            sobrenome: 'Melo',
+            idade: 18,
+            poder: 'força',
+        }
+        personagem.apply(personageThis)
+
+
+
+      
+
+
+
+    </script>
+</body>
+</html>
