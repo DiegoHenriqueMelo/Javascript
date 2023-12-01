@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>     
+
+
+        const nome = ['Diego', 'Melo', "teste"]
+        const numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const nomesMinusculo = nome.map(nome => nome.toLocaleLowerCase())
+
+        const numeroFiltrados = numero.filter(numero => numero %2 === 0)
+        const numeroFiltrados1 = numero.filter(numero => numero %2 === 1)
+        const numeroFiltradosMap1 = numero.filter(numero => numero %2 === 1).map(numero => numero *2)
+
+        const pessoas = [{
+            nome: 'Diego',
+            idade: 18,
+        },
+
+        {
+            nome: 'Milena',
+            idade: 20,
+        },
+        {
+            nome: 'Cecilia',
+            idade: 7,
+        },
+        {
+            nome: 'Maitê',
+            idade: 10
+        }
+    ]
+
+        const pessoasAgrupadas = pessoas.reduce(function(valorAcumulador, valorArray){
+        const maiorOuMenor = valorArray.idade >= 18? "maiores" : 'menores'
+        valorAcumulador[maiorOuMenor].push(valorArray);
+        return valorAcumulador
+
+        }, {maiores: [], menores: []})
+
+        console.log(nome)
+        console.log(nomesMinusculo)
+        console.log(numero)
+        console.log('Filtro  %2 === 0', numeroFiltrados)
+        console.log('Filtro  %2 === 1', numeroFiltrados1)
+        console.log('Filtro  %2 === 1 e *2', numeroFiltradosMap1)
+        console.log(pessoasAgrupadas)
+    
+    
+    
+    </script>
+</body>
+</html>
